@@ -26,7 +26,6 @@ class StudentServiceImpl(StudentDAO):
         phone_number = str(phone_number)
 
         stmt = self.conn.cursor()
-        stmt = self.conn.cursor()
         stmt.execute(
             "INSERT INTO students (first_name, last_name, date_of_birth, email, phone_number) VALUES (%s, %s, %s, %s, %s)",
             (first_name, last_name, date_of_birth, email, phone_number))

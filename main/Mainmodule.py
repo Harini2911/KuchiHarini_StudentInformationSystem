@@ -127,8 +127,10 @@ class Main:
                                     break
                             else:
                                 raise InvalidDataException("Input should be between 1 and 6")
+
                     else:
                         exit()
+
             except Exception as e:
                 print(f"An error occurred: {e}")
             finally:
