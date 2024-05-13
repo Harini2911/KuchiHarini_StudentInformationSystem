@@ -2,9 +2,12 @@ import mysql.connector as sql
 
 
 class Dbconnection:
+    def __init__(self):
+        self.conn = None
+        self.stmt = None
+
     def open(self):
-        try: # connecting with database
-            # print("--Database Is Connected:--")
+        try:
             self.conn = sql.connect(host='localhost', database='SISDB', user='root', password='Harini2002')
             if self.conn.is_connected():
                 print('Database connected..')

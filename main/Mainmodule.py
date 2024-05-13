@@ -8,7 +8,6 @@ from Entity.Teacher import Teacher
 from datetime import datetime
 
 
-
 class Main:
     def _init_(self):
         self.loop = None
